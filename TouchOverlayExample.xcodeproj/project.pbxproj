@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28BF4341179D89D30026DA0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BF4340179D89D30026DA0F /* UIKit.framework */; };
+		28BF4343179D89D30026DA0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BF4342179D89D30026DA0F /* Foundation.framework */; };
+		28BF4345179D89D30026DA0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BF4344179D89D30026DA0F /* CoreGraphics.framework */; };
+		28BF434B179D89D30026DA0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28BF4349179D89D30026DA0F /* InfoPlist.strings */; };
+		28BF434D179D89D30026DA0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF434C179D89D30026DA0F /* main.m */; };
+		28BF4351179D89D30026DA0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4350179D89D30026DA0F /* AppDelegate.m */; };
+		28BF4353179D89D30026DA0F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BF4352179D89D30026DA0F /* Default.png */; };
+		28BF4355179D89D30026DA0F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BF4354179D89D30026DA0F /* Default@2x.png */; };
+		28BF4357179D89D30026DA0F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BF4356179D89D30026DA0F /* Default-568h@2x.png */; };
+		28BF435A179D89D30026DA0F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BF4358179D89D30026DA0F /* MainStoryboard_iPhone.storyboard */; };
+		28BF435D179D89D30026DA0F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BF435B179D89D30026DA0F /* MainStoryboard_iPad.storyboard */; };
+		28BF4360179D89D30026DA0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF435F179D89D30026DA0F /* ViewController.m */; };
+		28BF4368179D89D30026DA0F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BF4367179D89D30026DA0F /* SenTestingKit.framework */; };
+		28BF4369179D89D30026DA0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BF4340179D89D30026DA0F /* UIKit.framework */; };
+		28BF436A179D89D30026DA0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BF4342179D89D30026DA0F /* Foundation.framework */; };
+		28BF4372179D89D30026DA0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28BF4370179D89D30026DA0F /* InfoPlist.strings */; };
+		28BF4375179D89D30026DA0F /* TouchOverlayExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4374179D89D30026DA0F /* TouchOverlayExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28BF436B179D89D30026DA0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28BF4335179D89D30026DA0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28BF433C179D89D30026DA0F;
+			remoteInfo = TouchOverlayExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28BF433D179D89D30026DA0F /* TouchOverlayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchOverlayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BF4340179D89D30026DA0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28BF4342179D89D30026DA0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28BF4344179D89D30026DA0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28BF4348179D89D30026DA0F /* TouchOverlayExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchOverlayExample-Info.plist"; sourceTree = "<group>"; };
+		28BF434A179D89D30026DA0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28BF434C179D89D30026DA0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28BF434E179D89D30026DA0F /* TouchOverlayExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchOverlayExample-Prefix.pch"; sourceTree = "<group>"; };
+		28BF434F179D89D30026DA0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28BF4350179D89D30026DA0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28BF4352179D89D30026DA0F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		28BF4354179D89D30026DA0F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		28BF4356179D89D30026DA0F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		28BF4359179D89D30026DA0F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		28BF435C179D89D30026DA0F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		28BF435E179D89D30026DA0F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		28BF435F179D89D30026DA0F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		28BF4366179D89D30026DA0F /* TouchOverlayExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchOverlayExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BF4367179D89D30026DA0F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		28BF436F179D89D30026DA0F /* TouchOverlayExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchOverlayExampleTests-Info.plist"; sourceTree = "<group>"; };
+		28BF4371179D89D30026DA0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28BF4373179D89D30026DA0F /* TouchOverlayExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchOverlayExampleTests.h; sourceTree = "<group>"; };
+		28BF4374179D89D30026DA0F /* TouchOverlayExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchOverlayExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28BF433A179D89D30026DA0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BF4341179D89D30026DA0F /* UIKit.framework in Frameworks */,
+				28BF4343179D89D30026DA0F /* Foundation.framework in Frameworks */,
+				28BF4345179D89D30026DA0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BF4362179D89D30026DA0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BF4368179D89D30026DA0F /* SenTestingKit.framework in Frameworks */,
+				28BF4369179D89D30026DA0F /* UIKit.framework in Frameworks */,
+				28BF436A179D89D30026DA0F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28BF4334179D89D30026DA0F = {
+			isa = PBXGroup;
+			children = (
+				28BF4346179D89D30026DA0F /* TouchOverlayExample */,
+				28BF436D179D89D30026DA0F /* TouchOverlayExampleTests */,
+				28BF433F179D89D30026DA0F /* Frameworks */,
+				28BF433E179D89D30026DA0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28BF433E179D89D30026DA0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28BF433D179D89D30026DA0F /* TouchOverlayExample.app */,
+				28BF4366179D89D30026DA0F /* TouchOverlayExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28BF433F179D89D30026DA0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28BF4340179D89D30026DA0F /* UIKit.framework */,
+				28BF4342179D89D30026DA0F /* Foundation.framework */,
+				28BF4344179D89D30026DA0F /* CoreGraphics.framework */,
+				28BF4367179D89D30026DA0F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28BF4346179D89D30026DA0F /* TouchOverlayExample */ = {
+			isa = PBXGroup;
+			children = (
+				28BF434F179D89D30026DA0F /* AppDelegate.h */,
+				28BF4350179D89D30026DA0F /* AppDelegate.m */,
+				28BF4358179D89D30026DA0F /* MainStoryboard_iPhone.storyboard */,
+				28BF435B179D89D30026DA0F /* MainStoryboard_iPad.storyboard */,
+				28BF435E179D89D30026DA0F /* ViewController.h */,
+				28BF435F179D89D30026DA0F /* ViewController.m */,
+				28BF4347179D89D30026DA0F /* Supporting Files */,
+			);
+			path = TouchOverlayExample;
+			sourceTree = "<group>";
+		};
+		28BF4347179D89D30026DA0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28BF4348179D89D30026DA0F /* TouchOverlayExample-Info.plist */,
+				28BF4349179D89D30026DA0F /* InfoPlist.strings */,
+				28BF434C179D89D30026DA0F /* main.m */,
+				28BF434E179D89D30026DA0F /* TouchOverlayExample-Prefix.pch */,
+				28BF4352179D89D30026DA0F /* Default.png */,
+				28BF4354179D89D30026DA0F /* Default@2x.png */,
+				28BF4356179D89D30026DA0F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28BF436D179D89D30026DA0F /* TouchOverlayExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				28BF4373179D89D30026DA0F /* TouchOverlayExampleTests.h */,
+				28BF4374179D89D30026DA0F /* TouchOverlayExampleTests.m */,
+				28BF436E179D89D30026DA0F /* Supporting Files */,
+			);
+			path = TouchOverlayExampleTests;
+			sourceTree = "<group>";
+		};
+		28BF436E179D89D30026DA0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28BF436F179D89D30026DA0F /* TouchOverlayExampleTests-Info.plist */,
+				28BF4370179D89D30026DA0F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28BF433C179D89D30026DA0F /* TouchOverlayExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28BF4378179D89D30026DA0F /* Build configuration list for PBXNativeTarget "TouchOverlayExample" */;
+			buildPhases = (
+				28BF4339179D89D30026DA0F /* Sources */,
+				28BF433A179D89D30026DA0F /* Frameworks */,
+				28BF433B179D89D30026DA0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchOverlayExample;
+			productName = TouchOverlayExample;
+			productReference = 28BF433D179D89D30026DA0F /* TouchOverlayExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28BF4365179D89D30026DA0F /* TouchOverlayExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28BF437B179D89D30026DA0F /* Build configuration list for PBXNativeTarget "TouchOverlayExampleTests" */;
+			buildPhases = (
+				28BF4361179D89D30026DA0F /* Sources */,
+				28BF4362179D89D30026DA0F /* Frameworks */,
+				28BF4363179D89D30026DA0F /* Resources */,
+				28BF4364179D89D30026DA0F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28BF436C179D89D30026DA0F /* PBXTargetDependency */,
+			);
+			name = TouchOverlayExampleTests;
+			productName = TouchOverlayExampleTests;
+			productReference = 28BF4366179D89D30026DA0F /* TouchOverlayExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28BF4335179D89D30026DA0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Markus Kauppila";
+			};
+			buildConfigurationList = 28BF4338179D89D30026DA0F /* Build configuration list for PBXProject "TouchOverlayExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28BF4334179D89D30026DA0F;
+			productRefGroup = 28BF433E179D89D30026DA0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28BF433C179D89D30026DA0F /* TouchOverlayExample */,
+				28BF4365179D89D30026DA0F /* TouchOverlayExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28BF433B179D89D30026DA0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BF434B179D89D30026DA0F /* InfoPlist.strings in Resources */,
+				28BF4353179D89D30026DA0F /* Default.png in Resources */,
+				28BF4355179D89D30026DA0F /* Default@2x.png in Resources */,
+				28BF4357179D89D30026DA0F /* Default-568h@2x.png in Resources */,
+				28BF435A179D89D30026DA0F /* MainStoryboard_iPhone.storyboard in Resources */,
+				28BF435D179D89D30026DA0F /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BF4363179D89D30026DA0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BF4372179D89D30026DA0F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28BF4364179D89D30026DA0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28BF4339179D89D30026DA0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BF434D179D89D30026DA0F /* main.m in Sources */,
+				28BF4351179D89D30026DA0F /* AppDelegate.m in Sources */,
+				28BF4360179D89D30026DA0F /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BF4361179D89D30026DA0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BF4375179D89D30026DA0F /* TouchOverlayExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28BF436C179D89D30026DA0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28BF433C179D89D30026DA0F /* TouchOverlayExample */;
+			targetProxy = 28BF436B179D89D30026DA0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28BF4349179D89D30026DA0F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28BF434A179D89D30026DA0F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		28BF4358179D89D30026DA0F /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28BF4359179D89D30026DA0F /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		28BF435B179D89D30026DA0F /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28BF435C179D89D30026DA0F /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		28BF4370179D89D30026DA0F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28BF4371179D89D30026DA0F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28BF4376179D89D30026DA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28BF4377179D89D30026DA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28BF4379179D89D30026DA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchOverlayExample/TouchOverlayExample-Prefix.pch";
+				INFOPLIST_FILE = "TouchOverlayExample/TouchOverlayExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		28BF437A179D89D30026DA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchOverlayExample/TouchOverlayExample-Prefix.pch";
+				INFOPLIST_FILE = "TouchOverlayExample/TouchOverlayExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		28BF437C179D89D30026DA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TouchOverlayExample.app/TouchOverlayExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchOverlayExample/TouchOverlayExample-Prefix.pch";
+				INFOPLIST_FILE = "TouchOverlayExampleTests/TouchOverlayExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		28BF437D179D89D30026DA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TouchOverlayExample.app/TouchOverlayExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchOverlayExample/TouchOverlayExample-Prefix.pch";
+				INFOPLIST_FILE = "TouchOverlayExampleTests/TouchOverlayExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28BF4338179D89D30026DA0F /* Build configuration list for PBXProject "TouchOverlayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28BF4376179D89D30026DA0F /* Debug */,
+				28BF4377179D89D30026DA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28BF4378179D89D30026DA0F /* Build configuration list for PBXNativeTarget "TouchOverlayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28BF4379179D89D30026DA0F /* Debug */,
+				28BF437A179D89D30026DA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28BF437B179D89D30026DA0F /* Build configuration list for PBXNativeTarget "TouchOverlayExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28BF437C179D89D30026DA0F /* Debug */,
+				28BF437D179D89D30026DA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28BF4335179D89D30026DA0F /* Project object */;
+}
