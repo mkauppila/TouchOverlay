@@ -26,6 +26,8 @@
 		28BF4375179D89D30026DA0F /* TouchOverlayExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4374179D89D30026DA0F /* TouchOverlayExampleTests.m */; };
 		28BF4381179D8AA20026DA0F /* TOApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4380179D8AA20026DA0F /* TOApplication.m */; };
 		28BF4382179D8AA20026DA0F /* TOApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4380179D8AA20026DA0F /* TOApplication.m */; };
+		28BF4385179D8B5B0026DA0F /* TOOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4384179D8B5B0026DA0F /* TOOverlayView.m */; };
+		28BF4386179D8B5B0026DA0F /* TOOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4384179D8B5B0026DA0F /* TOOverlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		28BF4374179D89D30026DA0F /* TouchOverlayExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchOverlayExampleTests.m; sourceTree = "<group>"; };
 		28BF437F179D8AA20026DA0F /* TOApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOApplication.h; sourceTree = "<group>"; };
 		28BF4380179D8AA20026DA0F /* TOApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOApplication.m; sourceTree = "<group>"; };
+		28BF4383179D8B5B0026DA0F /* TOOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOOverlayView.h; sourceTree = "<group>"; };
+		28BF4384179D8B5B0026DA0F /* TOOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOOverlayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 			children = (
 				28BF437F179D8AA20026DA0F /* TOApplication.h */,
 				28BF4380179D8AA20026DA0F /* TOApplication.m */,
+				28BF4383179D8B5B0026DA0F /* TOOverlayView.h */,
+				28BF4384179D8B5B0026DA0F /* TOOverlayView.m */,
 			);
 			path = TouchOverlay;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 				28BF4351179D89D30026DA0F /* AppDelegate.m in Sources */,
 				28BF4360179D89D30026DA0F /* ViewController.m in Sources */,
 				28BF4381179D8AA20026DA0F /* TOApplication.m in Sources */,
+				28BF4385179D8B5B0026DA0F /* TOOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +308,7 @@
 			files = (
 				28BF4375179D89D30026DA0F /* TouchOverlayExampleTests.m in Sources */,
 				28BF4382179D8AA20026DA0F /* TOApplication.m in Sources */,
+				28BF4386179D8B5B0026DA0F /* TOOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
