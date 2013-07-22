@@ -10,9 +10,16 @@
 
 #import "AppDelegate.h"
 
+#import "TOApplication.h"
+
 int main(int argc, char *argv[])
 {
 	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+		@autoreleasepool {
+			return UIApplicationMain(argc,
+									 argv,
+									 NSStringFromClass([TOApplication class]),
+									 NSStringFromClass([AppDelegate class]));
+		}
 	}
 }
