@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ The TOApplication finds the overlay view using the tag from
+ the key window.
+ */
+extern const NSInteger TOOverlayViewRecognitionTag;
+
 @interface TOOverlayView : UIView
 
 @end

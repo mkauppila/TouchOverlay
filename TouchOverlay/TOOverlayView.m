@@ -8,13 +8,15 @@
 
 #import "TOOverlayView.h"
 
+const NSInteger TOOverlayViewRecognitionTag = 9898944;
+
 @implementation TOOverlayView
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+		self.backgroundColor = [UIColor purpleColor];
     }
     return self;
 }

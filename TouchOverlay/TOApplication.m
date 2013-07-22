@@ -8,11 +8,24 @@
 
 #import "TOApplication.h"
 
+#import "TOOverlayView.h"
+
 @implementation TOApplication
 
 - (void)sendEvent:(UIEvent *)event
 {
 	[super sendEvent:event];
+	
+	UIWindow *window = [self keyWindow];
+	
+	TOOverlayView *view = (TOOverlayView *)[window viewWithTag:TOOverlayViewRecognitionTag];
+	if (view == nil) {
+		view = [[TOOverlayView alloc] initWithFrame:window.bounds];
+		view.tag = TOOverlayViewRecognitionTag;
+		view.userInteractionEnabled = NO;
+		[window addSubview:view];
+		NSLog(@"Created subview for drawing");
+	}
 }
 
 @end
