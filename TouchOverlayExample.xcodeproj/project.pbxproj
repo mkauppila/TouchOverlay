@@ -24,6 +24,8 @@
 		28BF436A179D89D30026DA0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BF4342179D89D30026DA0F /* Foundation.framework */; };
 		28BF4372179D89D30026DA0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28BF4370179D89D30026DA0F /* InfoPlist.strings */; };
 		28BF4375179D89D30026DA0F /* TouchOverlayExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4374179D89D30026DA0F /* TouchOverlayExampleTests.m */; };
+		28BF4381179D8AA20026DA0F /* TOApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4380179D8AA20026DA0F /* TOApplication.m */; };
+		28BF4382179D8AA20026DA0F /* TOApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF4380179D8AA20026DA0F /* TOApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		28BF4371179D89D30026DA0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28BF4373179D89D30026DA0F /* TouchOverlayExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchOverlayExampleTests.h; sourceTree = "<group>"; };
 		28BF4374179D89D30026DA0F /* TouchOverlayExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchOverlayExampleTests.m; sourceTree = "<group>"; };
+		28BF437F179D8AA20026DA0F /* TOApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOApplication.h; sourceTree = "<group>"; };
+		28BF4380179D8AA20026DA0F /* TOApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		28BF4334179D89D30026DA0F = {
 			isa = PBXGroup;
 			children = (
+				28BF437E179D8A420026DA0F /* TouchOverlay */,
 				28BF4346179D89D30026DA0F /* TouchOverlayExample */,
 				28BF436D179D89D30026DA0F /* TouchOverlayExampleTests */,
 				28BF433F179D89D30026DA0F /* Frameworks */,
@@ -161,6 +166,15 @@
 				28BF4370179D89D30026DA0F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28BF437E179D8A420026DA0F /* TouchOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				28BF437F179D8AA20026DA0F /* TOApplication.h */,
+				28BF4380179D8AA20026DA0F /* TOApplication.m */,
+			);
+			path = TouchOverlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +291,7 @@
 				28BF434D179D89D30026DA0F /* main.m in Sources */,
 				28BF4351179D89D30026DA0F /* AppDelegate.m in Sources */,
 				28BF4360179D89D30026DA0F /* ViewController.m in Sources */,
+				28BF4381179D8AA20026DA0F /* TOApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BF4375179D89D30026DA0F /* TouchOverlayExampleTests.m in Sources */,
+				28BF4382179D8AA20026DA0F /* TOApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
