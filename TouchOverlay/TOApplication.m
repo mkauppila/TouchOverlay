@@ -30,7 +30,30 @@
 {
 	[super sendEvent:event];
 	
+	// TODO: only handle touch events, not motion events etc.
+	
 	UIWindow *window = [self keyWindow];
+	
+	NSLog(@"event: %@", event);
+	
+	NSMutableArray *newTouchPoints = [NSMutableArray array];
+	
+	NSSet *allTouches = [event allTouches];
+	NSLog(@"Number of touches: %d", [allTouches count]);
+	for (UITouch *touch in allTouches) {
+		// TODO: handle phases properly
+		if (touch.phase == UITouchPhaseBegan) {
+			NSLog(@"-- touch began");
+		} else if (touch.phase == UITouchPhaseEnded) {
+			NSLog(@"-- touch ended");
+		}
+		
+		NSLog(@"timestamps: %f", touch.timestamp);
+		CGPoint point = [touch locationInView:window];
+		NSLog(@"location: %f,%f", point.x, point.y);
+		
+		[newTouchPoints addObject:[NSValue valueWithCGPoint:point]];
+	}
 	
 	TOOverlayView *view = (TOOverlayView *)[window viewWithTag:TOOverlayViewRecognitionTag];
 	if (view == nil) {
@@ -40,6 +63,11 @@
 		[window addSubview:view];
 		NSLog(@"Created subview for drawing");
 	}
+	
+	[view addTouchPoints:newTouchPoints];
+	
+	// Force to re-render the view
+	[view setNeedsDisplay];
 }
 
 @end

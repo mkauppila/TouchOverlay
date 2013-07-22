@@ -24,24 +24,40 @@
 
 const NSInteger TOOverlayViewRecognitionTag = 9898944;
 
+@interface TOOverlayView ()
+@property (strong, nonatomic) NSMutableArray *points;
+@end
+
 @implementation TOOverlayView
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-		self.backgroundColor = [UIColor purpleColor];
+		self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+- (void)addTouchPoints:(NSArray *)newPoints
+{
+	if (self.points == nil) {
+		self.points = [NSMutableArray array];
+	}
+	[self.points addObjectsFromArray:newPoints];
+}
+
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+	CGContextRef context = UIGraphicsGetCurrentContext();
+	CGContextClearRect(context, self.bounds);
+	
+	CGContextSetFillColorWithColor(context, [[UIColor greenColor] CGColor]);
+	
+	for (NSValue *value in self.points) {
+		CGPoint point  = [value CGPointValue];
+		CGContextFillRect(context, CGRectMake(point.x, point.y, 10.0f, 10.0f));
+	}
 }
-*/
 
 @end
