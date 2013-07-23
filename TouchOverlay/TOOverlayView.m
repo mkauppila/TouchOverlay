@@ -55,11 +55,17 @@ const NSInteger TOOverlayViewRecognitionTag = 9898944;
 	CGContextClearRect(context, self.bounds);
 	
 	CGContextSetFillColorWithColor(context, [[UIColor greenColor] CGColor]);
+	CGContextSetStrokeColorWithColor(context, [[UIColor greenColor] CGColor]);
 	
-	for (NSValue *value in self.points) {
-		CGPoint point  = [value CGPointValue];
-		CGContextFillRect(context, CGRectMake(point.x, point.y, 10.0f, 10.0f));
-	}
+	[self.points enumerateObjectsUsingBlock:^(NSValue *value, NSUInteger idx, BOOL *stop) {
+		CGPoint point = [value CGPointValue];
+		if (idx == 0) {
+			CGContextMoveToPoint(context, point.x, point.y);
+		} else {
+			CGContextAddLineToPoint(context, point.x, point.y);
+		}
+	}];
+	CGContextStrokePath(context);
 }
 
 @end
