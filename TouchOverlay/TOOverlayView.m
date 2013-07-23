@@ -41,6 +41,11 @@ const NSInteger TOOverlayViewRecognitionTag = 9898944;
     return self;
 }
 
+- (void)clearAllTouchPoints
+{
+	[self.points removeAllObjects];
+}
+
 - (void)addTouchPoints:(NSArray *)newPoints
 {
 	if (self.points == nil) {

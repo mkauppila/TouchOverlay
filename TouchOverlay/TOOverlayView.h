@@ -30,6 +30,7 @@ extern const NSInteger TOOverlayViewRecognitionTag;
 
 @interface TOOverlayView : UIView
 
+- (void)clearAllTouchPoints;
 - (void)addTouchPoints:(NSArray *)newPoints;
 
 @end

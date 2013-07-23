@@ -34,6 +34,14 @@
 	// TODO: only handle touch events, not motion events etc.
 	
 	UIWindow *window = [self keyWindow];
+	TOOverlayView *view = (TOOverlayView *)[window viewWithTag:TOOverlayViewRecognitionTag];
+	if (view == nil) {
+		view = [[TOOverlayView alloc] initWithFrame:window.bounds];
+		view.tag = TOOverlayViewRecognitionTag;
+		view.userInteractionEnabled = NO;
+		[window addSubview:view];
+		TOLog(@"Created subview for drawing");
+	}
 	
 	TOLog(@"event: %@", event);
 	
@@ -42,27 +50,20 @@
 	NSSet *allTouches = [event allTouches];
 	TOLog(@"Number of touches: %d", [allTouches count]);
 	for (UITouch *touch in allTouches) {
-		// TODO: handle phases properly
 		if (touch.phase == UITouchPhaseBegan) {
+			[view clearAllTouchPoints];
+			
 			TOLog(@"-- touch began");
+		} else if (touch.phase == UITouchPhaseMoved) {
+			CGPoint point = [touch locationInView:window];
+
+			TOLog(@"location: %f,%f", point.x, point.y);
+			TOLog(@"timestamps: %f", touch.timestamp);
+			
+			[newTouchPoints addObject:[NSValue valueWithCGPoint:point]];
 		} else if (touch.phase == UITouchPhaseEnded) {
 			TOLog(@"-- touch ended");
 		}
-		
-		TOLog(@"timestamps: %f", touch.timestamp);
-		CGPoint point = [touch locationInView:window];
-		TOLog(@"location: %f,%f", point.x, point.y);
-		
-		[newTouchPoints addObject:[NSValue valueWithCGPoint:point]];
-	}
-	
-	TOOverlayView *view = (TOOverlayView *)[window viewWithTag:TOOverlayViewRecognitionTag];
-	if (view == nil) {
-		view = [[TOOverlayView alloc] initWithFrame:window.bounds];
-		view.tag = TOOverlayViewRecognitionTag;
-		view.userInteractionEnabled = NO;
-		[window addSubview:view];
-		TOLog(@"Created subview for drawing");
 	}
 	
 	[view addTouchPoints:newTouchPoints];
