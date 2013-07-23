@@ -1,4 +1,4 @@
-// TOOverlayView.m
+// TouchOverlay.h
 //
 // Copyright (c) 2013 Markus Kauppila <markus.kauppila@gmail.com>
 //
@@ -20,46 +20,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "TOOverlayView.h"
+#import <Foundation/Foundation.h>
 
-#import "TouchOverlay.h"
+#if DEBUG
+#define TOLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+#elif
+#define TOLog(...) do {} while(0)
+#endif
 
-const NSInteger TOOverlayViewRecognitionTag = 9898944;
-
-@interface TOOverlayView ()
-@property (strong, nonatomic) NSMutableArray *points;
-@end
-
-@implementation TOOverlayView
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-		self.backgroundColor = [UIColor clearColor];
-    }
-    return self;
-}
-
-- (void)addTouchPoints:(NSArray *)newPoints
-{
-	if (self.points == nil) {
-		self.points = [NSMutableArray array];
-	}
-	[self.points addObjectsFromArray:newPoints];
-}
-
-- (void)drawRect:(CGRect)rect
-{
-	CGContextRef context = UIGraphicsGetCurrentContext();
-	CGContextClearRect(context, self.bounds);
-	
-	CGContextSetFillColorWithColor(context, [[UIColor greenColor] CGColor]);
-	
-	for (NSValue *value in self.points) {
-		CGPoint point  = [value CGPointValue];
-		CGContextFillRect(context, CGRectMake(point.x, point.y, 10.0f, 10.0f));
-	}
-}
-
-@end
+#import "TOApplication.h"

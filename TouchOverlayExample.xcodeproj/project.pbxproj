@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		289F3110179ECC840095ACE2 /* TouchOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchOverlay.h; sourceTree = "<group>"; };
 		28BF433D179D89D30026DA0F /* TouchOverlayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchOverlayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BF4340179D89D30026DA0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28BF4342179D89D30026DA0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -175,6 +176,7 @@
 		28BF437E179D8A420026DA0F /* TouchOverlay */ = {
 			isa = PBXGroup;
 			children = (
+				289F3110179ECC840095ACE2 /* TouchOverlay.h */,
 				28BF437F179D8AA20026DA0F /* TOApplication.h */,
 				28BF4380179D8AA20026DA0F /* TOApplication.m */,
 				28BF4383179D8B5B0026DA0F /* TOOverlayView.h */,
@@ -491,6 +493,7 @@
 				28BF437A179D89D30026DA0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28BF437B179D89D30026DA0F /* Build configuration list for PBXNativeTarget "TouchOverlayExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +502,7 @@
 				28BF437D179D89D30026DA0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

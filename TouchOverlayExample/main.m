@@ -24,7 +24,7 @@
 
 #import "AppDelegate.h"
 
-#import "TOApplication.h"
+#import "TouchOverlay.h"
 
 int main(int argc, char *argv[])
 {

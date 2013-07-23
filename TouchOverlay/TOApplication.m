@@ -22,6 +22,7 @@
 
 #import "TOApplication.h"
 
+#import "TouchOverlay.h"
 #import "TOOverlayView.h"
 
 @implementation TOApplication
@@ -34,23 +35,23 @@
 	
 	UIWindow *window = [self keyWindow];
 	
-	NSLog(@"event: %@", event);
+	TOLog(@"event: %@", event);
 	
 	NSMutableArray *newTouchPoints = [NSMutableArray array];
 	
 	NSSet *allTouches = [event allTouches];
-	NSLog(@"Number of touches: %d", [allTouches count]);
+	TOLog(@"Number of touches: %d", [allTouches count]);
 	for (UITouch *touch in allTouches) {
 		// TODO: handle phases properly
 		if (touch.phase == UITouchPhaseBegan) {
-			NSLog(@"-- touch began");
+			TOLog(@"-- touch began");
 		} else if (touch.phase == UITouchPhaseEnded) {
-			NSLog(@"-- touch ended");
+			TOLog(@"-- touch ended");
 		}
 		
-		NSLog(@"timestamps: %f", touch.timestamp);
+		TOLog(@"timestamps: %f", touch.timestamp);
 		CGPoint point = [touch locationInView:window];
-		NSLog(@"location: %f,%f", point.x, point.y);
+		TOLog(@"location: %f,%f", point.x, point.y);
 		
 		[newTouchPoints addObject:[NSValue valueWithCGPoint:point]];
 	}
@@ -61,7 +62,7 @@
 		view.tag = TOOverlayViewRecognitionTag;
 		view.userInteractionEnabled = NO;
 		[window addSubview:view];
-		NSLog(@"Created subview for drawing");
+		TOLog(@"Created subview for drawing");
 	}
 	
 	[view addTouchPoints:newTouchPoints];
