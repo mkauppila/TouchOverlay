@@ -1,4 +1,4 @@
-# TouchOverlay [![Stories in Ready](http://badge.waffle.io/mkauppila/TouchOverlay.png)](http://waffle.io/mkauppila/TouchOverlay)
+# TouchOverlay [![Stories in Ready](https://badge.waffle.io/mkauppila/TouchOverlay.png)](http://waffle.io/mkauppila/TouchOverlay)
 
 To be written.
 
