@@ -33,8 +33,8 @@ static inline CGPoint Perpendicular(CGPoint point) {
 }
 
 static inline CGPoint Normalize(CGPoint point) {
-	CGFloat lenght = sqrtf(point.x * 2 + point.y * 2);
-	return CGPointMake(point.x * lenght, point.x * lenght);
+	const CGFloat lenght = sqrtf(point.x * 2 + point.y * 2);
+	return CGPointMake(point.x / lenght, point.x / lenght);
 }
 
 const NSInteger TOOverlayViewRecognitionTag = 9898944;
