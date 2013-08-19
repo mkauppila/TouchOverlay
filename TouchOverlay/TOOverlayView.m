@@ -24,6 +24,19 @@
 
 #import "TouchOverlay.h"
 
+static inline CGPoint CGPointSubtract(CGPoint left, CGPoint right) {
+	return CGPointMake(left.x - right.x, left.y - right.y);
+}
+
+static inline CGPoint Perpendicular(CGPoint point) {
+	return CGPointMake(-point.y, point.x);
+}
+
+static inline CGPoint Normalize(CGPoint point) {
+	CGFloat lenght = sqrtf(point.x * 2 + point.y * 2);
+	return CGPointMake(point.x * lenght, point.x * lenght);
+}
+
 const NSInteger TOOverlayViewRecognitionTag = 9898944;
 
 @interface TOOverlayView ()
@@ -67,6 +80,18 @@ const NSInteger TOOverlayViewRecognitionTag = 9898944;
 		if (idx == 0) {
 			CGContextMoveToPoint(context, point.x, point.y);
 		} else {
+			/*
+			CGPoint prevPoint = [[self.points objectAtIndex:idx - 1] CGPointValue];
+			CGPoint direction = CGPointSubtract(point, prevPoint);
+			
+			CGPoint perp = Perpendicular(direction);
+			perp = Normalize(perp);
+			
+			CGPoint temp = CGPointMake(perp.x + point.x, perp.y + point.y);
+			//CGContextFillRect(context, CGRectMake(perp.x - 1.0f, perp.y - 1.0f, 1.0f, 1.0f));
+			CGContextAddLineToPoint(context, temp.x, temp.y);
+			*/
+			
 			CGContextAddLineToPoint(context, point.x, point.y);
 		}
 	}];
